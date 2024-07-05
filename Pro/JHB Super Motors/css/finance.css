@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --txt-clr: #ffffff;
+    --bg-clr: #212121;
+    --orange-clr: #ff5733;
+    --red-clr: #ff0000;
+    --ylw-clr: #ffff00;
+    --txt-clr-: #ffffff;
+    --rand-clr: #9a9a9a;
+     --bg-clr-: #212121;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    color: var(--txt-clr);
+    background: var(--bg-clr);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+    margin-top: 15px;
+}
+
+.logo{
+    width: 75px;
+    height: 45px;
+    border: 5px solid var(--txt-clr);
+    border-radius: 10px;
+    padding: 2px 2px;
+}
+
+.search {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.bars span{
+    font-size: 35px;
+    margin-right: 25px;
+}
+
+.hero{
+    width: 100%;
+    height: 360px;
+    background-image: url('img/background3.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    text-align: center;
+    
+}
+
+.text h1{
+    padding-top: 140px;
+    text-transform: uppercase;
+    color: var(--txt-clr-);
+    letter-spacing: 3px;
+    margin: 0px 5px;
+    font-size: 70px;
+}
+
+
+.paragraph{
+    margin: 20px 20px;
+    margin-left: 25px;
+    font-size: 30px;
+    margin-top: 46px;
+    font-weight: 200;
+} 
+
+.paragraph p{
+    margin: 14px 0px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+form{
+    margin: 10px 25px;
+}
+
+form h2{
+    margin: 10px 15px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.application{
+    margin: 10px 15px;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.application ul{
+    margin: 10px 20px;
+    margin-bottom: 50px;
+}
+
+.application li{
+    margin: 5px 0px;
+}
+
+.btn{
+     text-align: center;
+}
+
+.btn a{
+    text-decoration: none;
+    color: var(--bg-clr);
+    padding: 10px 50px;
+    background: var(--main-clr);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.65s;
+    cursor: pointer;
+}
+
+.btn a:hover{
+    box-shadow: 0px 0px 20px var(--main-clr);
+}
+
+.form-line{
+    background: var(--main-clr);
+    width: 100%;
+    height: 1.5px;
+}
+
+label{
+    margin: 10px 10px;
+    font-size: 20px;
+    font-weight: 200;
+    font-size: 35px;
+    
+}
+
+input{
+   margin: 20px 10px; 
+   margin-bottom: 50px;
+   outline: none;
+   padding: 25px 15px;
+   border: none;
+   border-bottom: 3px solid var(--red-clr);
+   background: #d8d8d8;
+   height: 60px;
+   width: 95%;
+   font-size: 27px;
+} 
+
+select{
+    margin: 20px 10px;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    width: 200px;
+    background: var(--red-clr);
+    color: var(--txt-clr-);
+    text-align: center;
+    outline: none;
+    padding: 0px 50px;
+    font-size: 26px;
+}
+
+textarea{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--main-clr);
+    background: #d8d8d8;
+    height: 100px;
+    width: 95%;
+}
+
+.btn_1 input{
+    text-decoration: none;
+    color: var(--txt-clr-);
+    padding: 20px 20px;
+    padding-bottom: 20px;
+    background: var(--red-clr);
+    border-radius: 8px;
+    width: 35%;
+    margin-left: 27%;
+    font-size: 20px;
+}
+
+.btn_1 input:hover{
+    box-shadow: 0px 0px 20px var(--red-clr);
+}
+
+.line{
+    background: var(--red-clr);
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+}
+
+footer{
+    font-size: 21px;
+    width: 93%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.btn a{
+    font-size: 25px;
+    padding: 15px 20px;
+    color: var(--txt-clr-);
+    background: var(--red-clr);
+    border-radius: 10px;
+    transition: .35s;
+    cursor: pointer;
+}
+
+.btn a:hover{
+    box-shadow: 0px 0px 20px var(--red-clr);
+}
+
+
+@media (max-width: 635px){
+    .logo{
+        width: 52.5px;
+        height: 31.5px;
+        border: 2px solid var(--txt-clr);
+    }
+    
+    .search{
+        font-size: 21px;
+    }
+    
+    .bars span{
+        font-size: 21px;
+    }
+    
+    .text h1{
+        font-size: 35px;
+        padding-top: 35px;
+     }
+    
+    .hero{
+        height: 180px;
+    }
+    
+    .paragraph{
+        font-size: 20px;
+    }
+    
+   form h2{
+       font-size: 25px;
+   } 
+   
+   form label{
+       font-size: 20px;
+   }
+   
+   input{
+       font-size: 15px;
+       height: 44px;
+       padding: 5px 5px;
+   }
+   
+   select{
+       font-size: 20px;
+       height: 50px;
+       width: 100px;
+       text-align: left;
+       padding: 5px 5px;
+   }
+   
+   .btn_1{
+       font-size: 15px;
+   }
+   
+   .application p{
+       font-size: 20px;
+   }
+   .application span{
+       font-size: 20px;
+   }
+   .application ul{
+       font-size: 20px;
+   }
+   
+   .btn_2{
+       font-size: 17px;
+   }
+   
+   .row{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        margin: 20px 20px;
+    }
+    .col{
+        padding: 10px 0px;
+    }
+    
+    .btn a{
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    
+   
+}    
+

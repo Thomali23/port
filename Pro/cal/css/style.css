@@ -1,0 +1,137 @@
+:root{
+    --cal-color: #87e7de;
+    --equal-color: #8ac6cf;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+   
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background: #1b1b1b;
+    border: 3px solid var(--cal-color);
+    width: 300px;
+    height: 510px;
+    margin: auto;
+    border-radius: 18px;
+    padding: 10px 10px;
+    transition: 1s;
+}
+
+#userInput{
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    padding: 40px 5px;
+    margin-bottom: 5px;
+    over-flow: hidden;
+    background: whitesmoke;
+    text-align: right;
+    direction: ltr;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    
+    width: 23.5%;
+    height: 65px;
+    text-align: center;
+    border: 1px solid var(--cal-color);
+    border-radius: 10px;
+    outline: none;
+    background: #1b1b1b;
+    color: var(--cal-color);
+    margin: 5px 0px;
+    transition: 1s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: #202020;
+    box-shadow: 0px 0px 10px var(--cal-color);
+}
+
+.btnEqual{
+    width: 47%;
+    height: 65px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    background: #1b1b1b;
+    color: var(--cal-color);
+    transition: 1s;
+}
+
+
+
+.btnEqual{
+    background: var(--cal-color);
+    color: #1b1b1b;
+}
+.btnEqual:hover{
+    cursor: pointer;
+    background: var(--equal-color);
+}
+
+.changeColor{
+    margin: 5px 45px;
+    background: #1b1b1b;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+    border: 3px solid var(--cal-color);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.cyan{
+    padding: 10px 10px;
+    background: #87e7de;
+    border: 2px solid #8ac6cf;
+    border-radius: 100px;
+}
+
+.orange{
+    padding: 10px 10px;
+    background: #ff7e40;
+    border: 2px solid #ca6433;
+    border-radius: 100px;
+}
+
+.pink{
+    padding: 10px 10px;
+    background: #ff95fc;
+    border: 2px solid #ca76c7;
+    border-radius: 100px;
+}
+
+
+@media(max-width: 1024px){
+    .changeColor{
+        width: 10.5%;
+    }
+}
+
+@media(max-width: 624px){
+    .changeColor{
+        width: 30%;
+    }
+}

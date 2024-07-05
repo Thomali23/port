@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --bg-clr-: #212121;
+    --txt-clr-: #d8d8d8;
+    --blue-clr: #36bdd8;
+    --org-clr: #d83e00;
+    --grn-clr: #00ff96;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: var(--bg-clr-);
+    color: var(--txt-clr-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.watch{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch h2{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 90px;
+    margin-bottom: 5%;
+}
+
+#time{
+    font-size: 90px;
+}
+
+button{
+    padding: 8px 20px;
+    background: transparent;
+    color: var(--txt-clr-);
+    border: 3px solid var(--txt-clr-);
+    border-radius: 35px;
+    font-size: 34px;
+    outline: none;
+    margin: 15% 10px;
+    text-transform: uppercase;
+    transition: .75s;
+
+}
+
+.start{
+    background: var(--blue-clr);
+}
+
+.stop{
+    background: var(--org-clr);
+}
+
+.reset{
+    background: var(--grn-clr);
+}
+
+.start:hover{
+    background: var(--txt-clr-);
+    color: var(--bg-clr-);
+    box-shadow: 0px 0px 10px var(--blue-clr);
+    border: 3px solid var(--blue-clr);
+    cursor: pointer;
+}
+
+.stop:hover{
+    background: var(--txt-clr-);
+    color: var(--bg-clr-);
+    box-shadow: 0px 0px 10px var(--org-clr);
+    border: 3px solid var(--org-clr);
+    cursor: pointer;
+}
+
+.reset:hover{
+    background: var(--txt-clr-);
+    color: var(--bg-clr-);
+    box-shadow: 0px 0px 10px var(--grn-clr);
+    border: 3px solid var(--grn-clr);
+    cursor: pointer;
+}
+
+@media(max-width: 760px){
+    button{
+        font-size: 20px;
+        padding: 6px 10px;
+    }
+    
+    #time{
+        font-size: 45px;
+    }
+    
+    .watch h2{
+        font-size: 45px;
+    }
+}

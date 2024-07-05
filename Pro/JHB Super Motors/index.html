@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="ThobaniM">
+    <link rel="icon" href="img/logo.jpg">
+    <title>JHB Super Motors | Home</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="menu/menu.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+     
+</head>
+<body data-mode="light">
+    
+      <nav>
+             <div class="search">
+               <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+           
+           <a href="#">
+               <img src="img/logo.jpg" alt="jhb super motor logo" class="logo">
+           </a>
+           
+              <div class="navbar-left nav_menu">
+                <div id="mySidenav" class="sidenav"> 
+                    <div class="bars">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+                    </div>
+                    <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+          <li><a href="sell.html">Sell Your Vehicle</a></li>
+            <li><a href="finance.html">Finance Application</a></li>
+            <li><a href="contact.html"> Contact Us</a></li>
+          </ul> 
+<img src="img/sun.png" alt="image of a sun icon" class="mode-switch" id="dark-light">
+                </div>
+           <div class="bars">
+                <span class="mr-auto" style=" " onclick="openNav()">  <i class="fa-solid fa-bars"></i> </span>
+      </div>
+      </div>
+      
+        </div>
+      
+        </nav>
+    
+    <section class="hero">
+        
+        <div class="hero-txt">
+            
+             <h2>Welcome to</h2>
+        <h1>JHB Super Motors</h1>
+        <p>Whether you are picking out a car to come see in person, or just browsing, click below to view our vehicles!</p>
+        <a href="#" class="hero-link">View Our Vehicles</a>
+        </div>
+        
+        
+    </section>
+    
+    <section class="vehicles">
+        
+        <h2>Vehicle Specials</h2>
+        
+        <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+            
+          <img src="img/img1.jpg" alt="" class="image" />
+          <div class="image-data">
+           
+          </div>
+        </div>
+        
+        <div class="slide swiper-slide">
+          <img src="img/img2.jpg" alt="" class="image" />
+          <div class="image-data">
+           
+          </div>
+        </div>
+        
+        <div class="slide swiper-slide">
+          <img src="img/img3.jpg" alt="" class="image" />
+          <div class="image-data">
+          
+          </div>
+        </div>
+          
+        <div class="slide swiper-slide">
+          <img src="img/img4.jpg" alt="" class="image" />
+          <div class="image-data">
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+        
+    </section>
+      
+      <div class="line"></div>
+      
+        <div class="intro">
+      <h2>What is <b>JHB Super Motors</b>?</h2>
+      <p>JHB Super Motors is a truly South African Family Owned and Operated business, driven by hands-on management with loads of experience in the Automotive Industry in South Africa. JHB Super Motors makes buying a pre-owned vehicle hassle free.</p>
+      <a href="#">About Us</a>
+  </div>
+  
+  <div class="line"></div>
+  
+  <div class="guide">
+      <h2>Guide To Buying The Right Pre - owned Vehicle</h2>
+      
+      <p>JHB Super Motors is the place to find the best car deals on used vehicles. Our sales executive's are quick to help and eager to point you in the right direction. But for those of you looking for advice behind the screen of your mobile device or computer, take a look at our tips for buying a used car and visit our dealership today.</p>
+      
+      <a href="#">Learn More</a>
+  </div>
+  
+    <div class="line"></div>
+    
+    
+    <footer>
+        
+        <section class="row">
+            
+            <div class="col">
+                  <h3>Socials</h3>
+               <ul class="social">
+                  <li><i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a></li>
+                  <li><i class="fa-brands fa-facebook"></i> <a href="#">Facebook</a></li>
+                  <li><i class="fa-brands fa-google"></i> <a href="#">Google Maps</a></li>
+                  <li><i class="fa-regular fa-envelope"></i><a href="#"> E-mail</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+                <h3>Adress</h3>
+                <ul>
+              <li>17 A & B Van Riebeeck Avenue</li>
+              <li>Alberton North</li>
+              <li>Alberton</li>
+              <li>1448</li>
+              </ul>
+            </div>
+            
+            <div class="col">
+                <h3>Sales</h3>
+                <ul>
+              <li>011-907-1091</li>
+              <li>info@jhbsupermotors.co.za</li>
+             </ul>
+            </div>
+            
+            <div class="col">
+                  <h3>Fiance</h3>
+                  <ul>
+              <li>011-869-0487</li>
+              </ul>
+            </div>
+            
+        </section>
+        
+        <div class="btn">
+       <a href="#">Car Fiance Calculator</a>
+        </div> 
+        
+    </footer>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/mode.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>

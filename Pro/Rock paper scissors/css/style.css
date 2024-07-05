@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(25, 25, 25);
+    color: azure;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 70px;
+    padding: 25px 25px;
+}
+
+.choices{
+    margin: 15px 15px;
+}
+
+.playerMove {
+    background-color: rgb(25, 25, 25);
+    outline: none;
+    border: none;
+}
+
+.playerMove img{
+    width: 175px;
+    height: 175px;
+    border: 3px solid white;
+    border-radius: 100px;
+    padding: 35px 35px;
+    margin: 30px 30px;
+    transition: all 0.5s;
+}
+
+.playerMove img:hover{
+    box-shadow: 0px 0px 15px white;
+    transform: translateY(-15px);
+}
+
+.js-score{
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.reset-score-btn{
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(25, 25, 25);
+    outline: none;
+    border: none;
+    color: azure;  
+    padding: 15px 30px;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 20px;
+    transition: all 0.75s;
+}
+
+.reset-score-btn:hover{
+    background-color: azure;
+    color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 15px white;
+}
+
+.js-result{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.move-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.js-moves{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 25px 5px;
+    padding: 10px 10px;
+}
+
+@media(max-width: 600px){
+    .heading{
+        font-size: 35px;
+    }
+    
+    .playerMove img{
+        width: 110px;
+        height: 110px;
+        padding: 25px 25px;
+        margin: 15px 15px;
+    }
+    
+    .js-result{
+         font-size: 25px;
+         margin-top: 8px;
+         margin-bottom: 8px;
+    }
+    
+    .js-moves{          
+      font-size: 20px;
+      font-weight: 400;
+      margin: 15px 5px;
+      padding: 10px 20px;
+} 
+           
+    }
+    
+    .js-score{
+     font-size: 30px;
+     margin-bottom: 25px;
+    
+    }
+    
+    .reset-score-btn{
+       font-size: 20px;
+       padding: 15px 20px;
+       margin-top: 5px; 
+       margin-bottom: 25px;
+    }
+}

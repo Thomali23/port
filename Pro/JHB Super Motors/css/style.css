@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --txt-clr: #ffffff;
+    --bg-clr: #212121;
+    --orange-clr: #ff5733;
+    --red-clr: #ff0000;
+    --ylw-clr: #ffff00;
+    --txt-clr-: #ffffff;
+     --bg-clr-: #212121;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    color: var(--txt-clr);
+    background: var(--bg-clr);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+    margin-top: 15px;
+}
+
+.logo{
+    width: 75px;
+    height: 45px;
+    border: 5px solid var(--txt-clr);
+    border-radius: 10px;
+    padding: 2px 2px;
+}
+
+.search {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.bars span{
+    font-size: 35px;
+    margin-right: 25px;
+}
+
+.hero{
+    width: 100%;
+    height: 370px;
+    background-image: url('img/backgrounda.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-txt{
+    padding-top: 60px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: var(--txt-clr-);
+}
+
+.hero-txt h1{
+    margin: 7px 0px;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.hero-txt p{
+    margin: 5px 10px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-link{
+    color: var(--txt-clr-);
+    background: var(--orange-clr);
+    padding: 10px 10px;
+    cursor: pointer;
+    transtion: .35s;
+}
+
+.hero-link:hover{
+    box-shadow: 0px 0px 30px var(--orange-clr);
+    border-radius: 10px;
+}
+
+.vehicles{
+    text-align: center;
+    margin: 30px 15px;
+    margin-top: 35px;
+    color: var(--txt-clr);
+}
+
+.vehicles h2{
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.main {
+  margin: 15px 0px;
+  width: 96%;
+  z-index: 0px;
+  border: 2px solid var(--red-clr);
+  border-radius: 10px;
+}
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  overflow: hidden;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 35px 35px;
+  background: var(--red-clr);
+}
+.nav-btn:hover {
+  background: var(--red-clr);
+}
+.swiper-button-next {
+  right: 90px;
+}
+.swiper-button-prev {
+  left: 90px;
+}
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
+
+
+.line{
+    width: 100%;
+    background: var(--red-clr);
+    margin: 25px 0px;
+    height: 3px;
+}
+
+.intro{
+    margin: 10px 23px;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.intro p{
+    font-size: 33px;
+    margin-bottom: 25px;
+}
+
+.intro h2{
+    margin-bottom: 15px;
+}
+.intro b{
+    color: var(--red-clr);
+}
+
+.intro a{
+    text-decoration: none;
+    color: var(--txt-clr);
+    background: var(--main-clr);
+    padding: 8px 8px;
+    font-size: 30px;
+    margin: 5px 0px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: .35s;
+    cursor: pointer;
+}
+
+.intro a:hover{
+     color: var(--txt-clr-);
+     background: var(--red-clr);
+     box-shadow: 0px 0px 20px var(--red-clr);
+}
+
+.guide{
+    text-align: center;
+     margin: 10px 23px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.guide p{
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.guide h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.guide a{
+    text-decoration: none;
+    color: var(--txt-clr);
+    background: var(--main-clr);
+    padding: 10px 24px;
+    font-size: 30px;
+    margin: 5px 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: .35s;
+    cursor: pointer;
+}
+
+.guide a:hover{
+     color: var(--txt-clr-);
+     background: var(--red-clr);
+     box-shadow: 0px 0px 10px var(--red-clr);
+}
+
+footer{
+    font-size: 21px;
+    width: 93%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.btn a{
+    font-size: 25px;
+    padding: 15px 20px;
+    color: var(--txt-clr-);
+    background: var(--red-clr);
+    border-radius: 10px;
+    transition: .35s;
+    cursor: pointer;
+}
+
+.btn a:hover{
+    box-shadow: 0px 0px 20px var(--red-clr);
+}
+
+@media (max-width: 435px){
+    .logo{
+        width: 52.5px;
+        height: 31.5px;
+        border: 2px solid var(--txt-clr);
+    }
+    
+    .search{
+        font-size: 21px;
+    }
+    
+    .bars span{
+        font-size: 21px;
+    }
+    
+    .hero-txt{
+        font-size: 17px;
+    }
+       
+    .vehicles h2{
+        font-size: 20px;
+    }
+    
+    .hero-link{
+        font-size: 12px;
+    }
+    
+    .guide h2{
+        font-size: 22px;
+    }
+    .guide p{
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+    .guide a{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    
+      .intro h2{
+        font-size: 22px;
+    }
+    .intro p{
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+    .intro a{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        margin: 20px 20px;
+    }
+    .col{
+        padding: 10px 0px;
+    }
+    
+    .btn a{
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    
+}
+
+@media (max-width: 635px){
+    .logo{
+        width: 52.5px;
+        height: 31.5px;
+        border: 2px solid var(--txt-clr);
+    }
+    
+    .search{
+        font-size: 21px;
+    }
+    
+    .bars span{
+        font-size: 21px;
+    }
+    
+    .hero-txt{
+        font-size: 20px;
+    }
+       
+    .vehicles h2{
+        font-size: 20px;
+    }
+    
+    .hero-link{
+        font-size: 12px;
+    }
+    
+    .guide h2{
+        font-size: 22px;
+    }
+    .guide p{
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+    .guide a{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    
+      .intro h2{
+        font-size: 22px;
+    }
+    .intro p{
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+    .intro a{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        margin: 20px 20px;
+    }
+    .col{
+        padding: 10px 0px;
+    }
+    
+    .btn a{
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    
+}
